@@ -17,6 +17,7 @@
 #include <errno.h>
 #include <stdarg.h>
 #include <time.h>
+#include <signal.h>
 
 #define MAXLINE 1024
 #define SERVER_PORT 8808

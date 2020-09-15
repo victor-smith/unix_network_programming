@@ -1,8 +1,14 @@
 #include ../Makefile.defines.in
 
-APPS = tcpserv01 tcpcli01 byteorder daytimetcpcli daytimetcpsrv
+APPS = tcpserv04 tcpcli04 tcpserv01 tcpcli01 byteorder daytimetcpcli daytimetcpsrv
 
 all:${APPS}
+
+tcpserv04: tcpserv04.o
+	${CC} ${CFLAGS} -o $@ tcpserv04.o
+
+tcpcli04: tcpcli04.o
+	${CC} ${CFLAGS} -o $@ tcpcli04.o
 
 tcpserv01: tcpserv01.o
 	${CC} ${CFLAGS} -o $@ tcpserv01.o
