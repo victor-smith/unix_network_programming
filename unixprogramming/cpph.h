@@ -46,4 +46,13 @@ err_sys(const char *fmt, ...)
         exit(1);
 }
 
+struct args{
+	long arg1;
+	long arg2;
+};
+
+struct result{
+	long sum;
+};
+
 #endif /* CPPH_H_ */
